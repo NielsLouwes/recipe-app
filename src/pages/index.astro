@@ -1,11 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import recipes from "../data/recipes.json"
+
+const recipesData = recipes.recipes
+
 ---
 
 <Layout title="Recipe App">
 	<main>
 		<h1>Recipe <span class="text-gradient">App</span></h1>
+		<div>
+			{recipesData.map((recipe) => recipe.name)}
+		</div>
 	</main>
 </Layout>
 

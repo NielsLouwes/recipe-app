@@ -1,0 +1,144 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Creamy Mushroom & Vegan Chicken",
+      "description": "An ultra creamy bean soup",
+      "ingredients": [],
+      "nutrition": [],
+      "tips": [],
+      "prep-time": null,
+      "cooking-time": 10,
+      "serves": "2-3",
+      "difficulty": 3,
+      "cuisine": "pasta",
+      "calories": null,
+      "tags": [
+        "pasta",
+        "vegan chicken",
+        "mushrooms",
+        "creamy pasta",
+        "easy to make"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Creamy Bean Soup with Sausage",
+      "description": "An ultra creamy bean soup with sausage. This soup isn’t one of those all day simmering affairs. So quick and easy to make, yet hearty and full of flavor. It’s rich and  tomatoey, jazzed up with Parmesan and topped with a delicious punchy, red pesto. A knock out 30 minute meal. Serve with a side of crusty bread for a mouthwatering result.",
+      "ingredients": [
+        "450 g Italian sausage mild or spicy, no casings",
+        "2 tbsp olive oil",
+        "2 garlic cloves",
+        "1 small onion",
+        "700 ml chicken broth",
+        "120 ml puréed tomatoes",
+        "90 g tomato paste",
+        "3 cans (360 g/13 oz) cannellini beans drained and rinsed",
+        "200 ml heavy cream",
+        "45 g grated Parmesan",
+        "2 tbsp chopped parsley",
+        "8 tbsp red pesto for serving"
+      ],
+      "nutrition": [
+        "Serving: 0g",
+        "Calories: 732kcal",
+        "Carbohydrates: 14g",
+        "Protein: 24g",
+        "Fat: 65g",
+        "Saturated Fat: 26g",
+        "Polyunsaturated Fat: 6g",
+        "Monounsaturated Fat: 26g",
+        "Cholesterol: 152mg",
+        "Sodium: 2707mg",
+        "Potassium: 615mg",
+        "Fiber: 2g",
+        "Sugar: 7g",
+        "Vitamin A: 1282IU",
+        "Vitamin C: 9mg",
+        "Calcium: 201mg",
+        "Iron: 3mg"
+      ],
+      "spices": [
+        "1 tsp salt",
+        "1 tsp black pepper",
+        "1 tsp dried thyme",
+        "1 tsp dried oregano",
+        "½ tsp fennel seeds",
+        "½ tsp crushed red pepper flakes"
+      ],
+      "instructions": [
+        "Get all the prep done before you start cooking: mince the garlic and finely chop the onion. Remove the casings from your sausage. Drain and rinse the beans.",
+        "Heat olive oil in a large pot over medium high. Add sausage, break up the meat into small pieces with a wooden spoon, and cook until browned and no longer pink, about 5 minutes. Add garlic and onion, cook until fragrant, for 3 minutes. Stir in spices, and cook for 1 minute more.",
+        "Pour in broth, add puréed tomatoes and tomato paste. Bring to a boil, then add cannellini beans. Stir, lower the heat, cover and simmer for 15 minutes, stirring every now and then.",
+        "When ready, pour in cream and stir to combine. Turn off the heat and stir in Parmesan. Finish off with some extra black pepper and parsley. Adjust salt to taste.",
+        "Serve with crusty bread. Dollop each bowl with red pesto and some red pepper flakes. Enjoy!"
+      ],
+      "tips": [],
+      "prep-time": 5,
+      "cooking-time": 25,
+      "serves": "4",
+      "difficulty": 3,
+      "cuisine": "Italian",
+      "calories": 732,
+      "tags": ["pasta", "vegan chicken", "mushrooms"]
+    },
+    {
+      "id": 3,
+      "name": "Vegan Potatoe Salad",
+      "description": "This vegan potato salad is creamy, wholesome, herby, zingy and refreshing! The recipe is gluten-free, oil-free and vegan (of course!). It's so easy to make and the ingredients are simple. Expect tender potatoes, with a creamy citrus dressing, fresh herbs and a little crunch from red onion and celery. Certainly, it’s the BEST vegan potato salad you’ll try. ",
+      "ingredients": [
+        "907 g red potatoes cut into 1 ½ inch pieces",
+        "5 ml fine sea salt",
+        "2 stalks celery thinly sliced",
+        "½ red onion thinly sliced",
+        "658 g dill tightly packed, chopped",
+        "123 g coconut yogurt",
+        "61 g lemon juice or apple cider vinegar",
+        "2 cloves garlic finely chopped",
+        "30 ml Dijon mustard",
+        "5 ml maple syrup",
+        "1.23 ml fine sea salt",
+        "0.62 ml ground pepper"
+      ],
+      "nutrition": [
+        "Calories: 180kcal",
+        "Carbohydrates: 37g",
+        "Protein: 8g",
+        "Fat: 2g",
+        "Saturated Fat: 1g",
+        "Sodium: 640mg",
+        "Potassium: 1539mg",
+        "Fiber: 5g",
+        "Sugar: 4g",
+        "Vitamin A: 8485IU",
+        "Vitamin C: 114mg",
+        "Calcium: 278mg",
+        "Iron: 8mg"
+      ],
+      "spices": [],
+      "instructions": [
+        "In a large pot add the chopped potatoes and sea salt. Fill with water to be 1-inch above the potatoes and bring to a boil on high-heat. Reduce to a simmer on medium-high heat and cook the potatoes until fork tender, about 5 minutes. Strain and rinse with cold water. Transfer to a large mixing bowl. Add the celery, red onion and dill.",
+        "In a small bowl, whisk together the Creamy Dressing: coconut yogurt, lemon juice, garlic, Dijon mustard, maple syrup, sea salt and pepper. Pour the dressing over the potato mixture and stir to combine."
+      ],
+      "tips": [
+        "Potato salad can be served immediately, or chill in the fridge until ready to eat.",
+        "I recommend using red potatoes for this recipe as they hold their shape when cooked. You can also use white or yellow potatoes, but their high starch content may make the potato salad a little mushy in texture.",
+        "Recipe will keep for 5 days. Store in the fridge in an air-tight container."
+      ],
+      "prep-time": 15,
+      "cooking-time": 10,
+      "serves": "2-3",
+      "difficulty": 3,
+      "cuisine": "pasta",
+      "calories": 180,
+      "tags": [
+        "potatoes",
+        "salad",
+        "potato salad",
+        "creamy pasta",
+        "gluten free",
+        "easy to make"
+      ]
+    }
+  ]
+}
