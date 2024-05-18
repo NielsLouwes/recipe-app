@@ -1,0 +1,29 @@
+---
+interface Props {
+    name: string,
+    description: string,
+    cuisine: string
+}
+
+const { name, description, cuisine} = Astro.props;
+---
+
+
+<div class="card">
+    <h3>{name}</h3>
+    <p>{description}</p>
+    <p><strong class="strong">Cuisine:</strong> {cuisine}</p>
+</div>
+
+<style>
+    .card {
+        border: 1px solid white;
+        border-radius: 15px;
+        padding: 15px;
+        cursor: pointer;
+    }
+
+    .strong {
+        color: #9853ED;
+    }
+</style>

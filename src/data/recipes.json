@@ -4,14 +4,32 @@
       "id": 1,
       "name": "Creamy Mushroom & Vegan Chicken",
       "description": "An ultra creamy bean soup",
-      "ingredients": [],
+      "ingredients": [
+        "1 tbs Olive Oil",
+        "2 cloves Garlic, smashed",
+        "1 Shallot, chopped fine",
+        "150g Chestnut Mushrooms, finely sliced",
+        "1/2 cup/125ml White Wine",
+        "1 cup/250ml Vegan Cream",
+        "1 tbs English Mustard",
+        "1 cup/100g Vegan ‘Chicken’ Pieces (optional – replace with chickpeas or beans)",
+        "1 tbs Chopped Fresh Tarragon",
+        "Pinch Sea Salt & Pepper",
+        "2 Servings Cooked Pasta, of your choice"
+      ],
       "nutrition": [],
+      "spices": [],
+      "instruction": [
+        "Place a non stick frying pan over a medium heat & add the oil. When the pan is hot add shallot, garlic, mushrooms & vegan chicken. Sauté the mix for 2-3 minutes until lovely & golden, then deglaze the pan with the white wine. Let the wine bubble away for 30 seconds to cook off the alcohol then add the vegan cream & mustard & stir well.",
+        "Let the sauce bubble for a minute or so then season with salt & pepper + add the tarragon.",
+        "Stir through your cooked pasta & serve. I like to garnish with a few chilli flakes."
+      ],
       "tips": [],
       "prep-time": null,
       "cooking-time": 10,
       "serves": "2-3",
       "difficulty": 3,
-      "cuisine": "pasta",
+      "cuisine": "Pasta",
       "calories": null,
       "tags": [
         "pasta",
@@ -129,7 +147,7 @@
       "cooking-time": 10,
       "serves": "2-3",
       "difficulty": 3,
-      "cuisine": "pasta",
+      "cuisine": "Pasta",
       "calories": 180,
       "tags": [
         "potatoes",

@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import recipes from "../data/recipes.json"
+import RecipeCard from '../components/RecipeCard.astro';
 
 const recipesData = recipes.recipes
 
@@ -9,8 +10,8 @@ const recipesData = recipes.recipes
 <Layout title="Recipe App">
 	<main>
 		<h1>Recipe <span class="text-gradient">App</span></h1>
-		<div>
-			{recipesData.map((recipe) => recipe.name)}
+		<div class="recipes">
+			{recipesData.map((recipe) => <RecipeCard name={recipe.name} description={recipe.description} cuisine={recipe.cuisine} />)}
 		</div>
 	</main>
 </Layout>
@@ -47,6 +48,12 @@ const recipesData = recipes.recipes
 		-webkit-text-fill-color: transparent;
 		background-size: 400%;
 		background-position: 0%;
+	}
+
+	.recipes {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
 	}
 	
 </style>
