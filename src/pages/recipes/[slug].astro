@@ -4,32 +4,61 @@ import recipes from "../../data/recipes.json"
 
 export async function getStaticPaths() {
 
- const paths = recipes.recipes.filter((path) => path.slug); // array of slugs from recipes
+ const paths = recipes.recipes.filter((recipe) => recipe.slug); // array of slugs from recipes
 
-  return paths.map((path) => {
+  return paths.map((recipe) => {
     return {
-      params: { slug: path.slug },
-      props: { path }
+      params: { slug: recipe.slug },
+      props: { recipe }
     };
   });
 }
 
-const { path } = Astro.props;
+const { recipe } = Astro.props;
 
-console.log('Astro.props', Astro.props)
 ---
 
-<Layout title={path.name}>
+<Layout title={recipe.name}>
 	<main class="main-container">
-        <h1 class="title"> {path.name}</h1>
-        <h2>{path.description}</h2>
+        <h1 class="title"> {recipe.name}</h1>
+        <h2>{recipe.description}</h2>
+        <div>
+            {recipe["prep-time"] ?    <p>Prep time: {recipe["prep-time"]}</p> : null }
+            <p>Cooking time: {recipe["cooking-time"]}</p>    
+            <p>Serves: {recipe.serves}</p>
+            <p>Cuisine: {recipe.cuisine}</p>
+            <p>Difficulty: {recipe.difficulty}</p>
+        </div>
+        <div>
+            <h2>Ingredients</h2>
+            <ul>
+                {recipe.ingredients.map((ingredient) => <li>{ingredient}</li>)}
+            </ul>
+            
+        </div>
+        <div>
+            <h2>Directions</h2>
+            <ol>
+                {recipe.instructions.map((instruction) => <li>{instruction}</li>)}
+            </ol>
+        </div>
 	</main>
 </Layout>
 
 <style>
- .main-container {
-    background: white;
-    height: 100vh;
- }
+  h1, h2, p , li {
+    color: white;
+  }
+
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
 
 </style>
