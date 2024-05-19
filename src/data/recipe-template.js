@@ -16,4 +16,5 @@ const recipeTemplateObject = {
   cuisine: "string",
   calories: null,
   tags: [],
+  slug: "string",
 };

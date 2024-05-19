@@ -1,0 +1,35 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import recipes from "../../data/recipes.json"
+
+export async function getStaticPaths() {
+
+ const paths = recipes.recipes.filter((path) => path.slug); // array of slugs from recipes
+
+  return paths.map((path) => {
+    return {
+      params: { slug: path.slug },
+      props: { path }
+    };
+  });
+}
+
+const { path } = Astro.props;
+
+console.log('Astro.props', Astro.props)
+---
+
+<Layout title={path.name}>
+	<main class="main-container">
+        <h1 class="title"> {path.name}</h1>
+        <h2>{path.description}</h2>
+	</main>
+</Layout>
+
+<style>
+ .main-container {
+    background: white;
+    height: 100vh;
+ }
+
+</style>

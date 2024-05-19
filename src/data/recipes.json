@@ -37,7 +37,8 @@
         "mushrooms",
         "creamy pasta",
         "easy to make"
-      ]
+      ],
+      "slug": "creamy-mushroom-vegan-chicken"
     },
     {
       "id": 2,
@@ -98,11 +99,12 @@
       "difficulty": 3,
       "cuisine": "Italian",
       "calories": 732,
-      "tags": ["pasta", "vegan chicken", "mushrooms"]
+      "tags": ["pasta", "vegan chicken", "mushrooms"],
+      "slug": "creamy-bean-soup-with-sausage"
     },
     {
       "id": 3,
-      "name": "Vegan Potatoe Salad",
+      "name": "Vegan Potato Salad",
       "description": "This vegan potato salad is creamy, wholesome, herby, zingy and refreshing! The recipe is gluten-free, oil-free and vegan (of course!). It's so easy to make and the ingredients are simple. Expect tender potatoes, with a creamy citrus dressing, fresh herbs and a little crunch from red onion and celery. Certainly, it’s the BEST vegan potato salad you’ll try. ",
       "ingredients": [
         "907 g red potatoes cut into 1 ½ inch pieces",
@@ -156,7 +158,8 @@
         "creamy pasta",
         "gluten free",
         "easy to make"
-      ]
+      ],
+      "slug": "vegan-potato-salad"
     }
   ]
 }

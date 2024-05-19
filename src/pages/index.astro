@@ -11,7 +11,7 @@ const recipesData = recipes.recipes
 	<main>
 		<h1>Recipe <span class="text-gradient">App</span></h1>
 		<div class="recipes">
-			{recipesData.map((recipe) => <RecipeCard name={recipe.name} description={recipe.description} cuisine={recipe.cuisine} />)}
+			{recipesData.map((recipe) => <RecipeCard name={recipe.name} description={recipe.description} cuisine={recipe.cuisine} slug={recipe.slug} />)}
 		</div>
 	</main>
 </Layout>
