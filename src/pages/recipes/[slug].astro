@@ -1,10 +1,12 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import recipes from "../../data/recipes.json"
+import { IngredientList } from "../../components/IngredientList"
+import SampleComponent from "../../components/SampleComponent"
 
 export async function getStaticPaths() {
 
- const paths = recipes.recipes.filter((recipe) => recipe.slug); // array of slugs from recipes
+ const paths = recipes.recipes.filter((recipe) => recipe.slug); 
 
   return paths.map((recipe) => {
     return {
@@ -21,20 +23,16 @@ const { recipe } = Astro.props;
 <Layout title={recipe.name}>
 	<main class="main-container">
         <h1 class="title"> {recipe.name}</h1>
-        <h2>{recipe.description}</h2>
-        <div>
-            {recipe["prep-time"] ?    <p>Prep time: {recipe["prep-time"]}</p> : null }
+        <p>{recipe.description}</p>
+        <div class="stats-container">
+            {recipe["prep-time"] ?  <p>Prep time: {recipe["prep-time"]}</p> : null }
             <p>Cooking time: {recipe["cooking-time"]}</p>    
             <p>Serves: {recipe.serves}</p>
             <p>Cuisine: {recipe.cuisine}</p>
             <p>Difficulty: {recipe.difficulty}</p>
         </div>
-        <div>
-            <h2>Ingredients</h2>
-            <ul>
-                {recipe.ingredients.map((ingredient) => <li>{ingredient}</li>)}
-            </ul>
-            
+        <div id="ingredients-container">
+            <IngredientList client:only="solid"  title="Ingredients list" recipe={recipe} />
         </div>
         <div>
             <h2>Directions</h2>
@@ -58,6 +56,20 @@ const { recipe } = Astro.props;
     color: white;
     font-size: 20px;
     line-height: 1.6;
+  }
+
+  .stats-container {
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 15px;
+    border-top: 12px solid purple;
+    margin-top: 30px;
+  }
+
+  button {
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
   }
 
 

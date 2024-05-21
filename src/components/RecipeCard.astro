@@ -24,7 +24,11 @@ console.log('Astro.props', Astro.props)
     .card {
         border: 1px solid white;
         border-radius: 15px;
-        padding: 15px;
+        padding: 10px 15px;
+    }
+
+    .card:hover {
+        border: 5px solid purple;     
     }
 
     .strong {
@@ -36,7 +40,11 @@ console.log('Astro.props', Astro.props)
     }
 
     a:hover {
-        text-decoration:none; 
-        cursor:pointer;  
-}
+        text-decoration: none; 
+        cursor: pointer;      
+    }
+
+    p {
+        width: 98%;
+    }
 </style>
