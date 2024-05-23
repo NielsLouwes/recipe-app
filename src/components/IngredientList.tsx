@@ -1,19 +1,38 @@
-import { createSignal, splitProps } from "solid-js";
+import { For, createEffect, createSignal, splitProps } from "solid-js";
+import { createStore } from "solid-js/store";
 import { render } from "solid-js/web";
 
+type Ingredient = string;
+
+type State = {
+  shoppingListData: Ingredient[];
+  shoppingListLength: number;
+};
+
 export const IngredientList = (props) => {
-  const x = props.recipe.ingredients;
-  console.log("x", x);
+  const [state, setState] = createStore<State>({
+    shoppingListData: [],
+    shoppingListLength: 0,
+  });
+
+  const addToShoppingList = () => {
+    setState("shoppingListData", (list) => [
+      ...list,
+      ...props.recipe.ingredients,
+    ]);
+  };
+
   return (
     <>
       {" "}
       <h2>{props.title}</h2>
-      <button>Add to shopping list</button>
+      <button onClick={() => addToShoppingList()}>Add to shopping list</button>
       <ul>
-        {props.recipe.ingredients.map((ingredient) => (
-          <li>{ingredient}</li>
-        ))}
-      </ul>{" "}
+        <For each={props.recipe.ingredients}>
+          {(ingredient, i) => <li key={i}>{ingredient}</li>}
+        </For>
+      </ul>
+      <div>Current count: {count()}</div>
     </>
   );
 };
